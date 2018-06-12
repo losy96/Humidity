@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lihao.humidity">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 简单注册 -->
+        <activity
+            android:name=".Content"
+            android:label="@string/title_activity_content"
+            android:theme="@style/NoAnimation" />
+        <activity android:name=".Login"
+            android:label="登陆"
+            />
+        <activity
+            android:name=".User"
+            android:label="@string/title_activity_user"
+            android:theme="@style/NoAnimation" />
+        <activity
+            android:name=".ListFlower"
+            android:label="@string/title_activity_list_flower"
+            android:theme="@style/NoAnimation" />
+        <activity
+            android:name=".ChangePassword"
+            android:label="修改密码" />
+        <activity
+            android:name=".Wifi"
+            android:label="设置设备"
+            android:theme="@style/NoAnimation" />
+        <activity android:name=".AddDevice" />
+        <activity
+            android:name=".FlowerDetail"
+            android:label="删除设备" />
+        <activity android:name=".ForgetPassword"
+            android:label="忘记密码"/>
+        <activity android:name=".SignUp"
+            android:label="注册"/>
+    </application>
+
+</manifest>

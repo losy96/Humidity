@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <LinearLayout
+            android:layout_width="294dp"
+            android:layout_height="187dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="85dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/user_id_input"
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_background"
+                android:ems="10"
+                android:hint="请输入邮箱"
+                android:inputType="textEmailAddress"
+                android:textSize="45px"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="63dp" />
+
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_background"
+                android:ems="10"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textSize="45px"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="141dp" />
+
+            <Button
+                android:id="@+id/forgetPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:background="@drawable/forget_password_text"
+                android:textColor="@color/colorPrimary"
+                android:text="忘记密码" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="287dp"
+            android:layout_height="95dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="138dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/sign_up"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_button_selector"
+                android:text="登陆" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/go_sign_up"
+        android:textSize="36px"
+        android:text="注册"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954" />
+
+
+</android.support.constraint.ConstraintLayout>

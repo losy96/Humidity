@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/flower_image"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:scaleType="fitCenter"
+            android:padding="10dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@id/flower_image">
+            <TextView
+                android:id="@+id/flower_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="45px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="20px"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/humidity_remind_image"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="10px"
+                android:layout_toRightOf="@id/flower_name"
+                android:src="@drawable/red" />
+            <TextView
+                android:id="@+id/humidity_remind_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/humidity_remind_image"
+                android:text="湿度过低"
+                android:layout_marginTop="10px"
+                android:textSize="30px"/>
+            <TextView
+                android:id="@+id/flower_renew_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/flower_name"
+                android:text="最近同步时间：2018-4-5  16:00"
+                android:textSize="35px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="20px"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

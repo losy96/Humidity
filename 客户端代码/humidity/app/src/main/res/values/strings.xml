@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">humidity</string>
+    <string name="title_activity_content">主页</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">花草</string>
+    <string name="title_notifications">用户</string>
+    <string name="title_activity_user">用户</string>
+    <string name="title_activity_list_flower">花草</string>
+</resources>

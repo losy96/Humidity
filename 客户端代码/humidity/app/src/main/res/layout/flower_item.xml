@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/flower_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@id/flower_image">
+            <TextView
+                android:id="@+id/flower_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="20px"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/flower_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/flower_name"
+                android:text="李浩对我的对我的我的口味分等我带我去带我去的等我等我饿"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="20px"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
