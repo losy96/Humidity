@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>湿度</title>
+    <style>
+        .main{
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+	<link type="text/css" rel="stylesheet" charset="UTF-8" href="{% static "js/translateelement.css" %}"</head>
+<body>
+    <div class="main">
+        <canvas id="canvas2" width="1200" height="400"></canvas>
+    </div>
+    
+	<script src="{% static "js/sChart.min.js" %}"></script>
+    <script>
+		var data1 = new Array();
+		var temp = {};
+		var Test = {{Test|safe}};
+for(var i in Test){
+	for(var j in Test[i]){
+		data1.push({name:String(j),value:parseInt(Test[i][j])});
+	}
+}
+/*
+        var data1 = [
+            {name:'12.0',value:11},
+            {name:'12:9',value:14},
+            {name:'2014',value:22},
+            {name:'2015',value:11},
+            {name:'2016',value:97},
+            {name:'2018',value:80},
+            {name:'2017',value:14},
+            {name:'2017',value:14},
+            {name:'2017',value:14},
+            {name:'2017',value:14},
+            {name:'2017',value:123},
+            {name:'2017',value:14},
+            {name:'2017',value:15},
+            {name:'2017',value:19},
+            {name:'2017',value:34},
+            {name:'2017',value:14},
+            {name:'2017',value:14}
+        ]
+		*/
+        new sChart('canvas2', 'line', data1, {
+            title: '今天湿度走势',
+            bgColor: '#ffffff',
+            titleColor: '#7d7d7d',
+            fillColor: '#ffb16e',       
+            axisColor: '#a2adb1',
+            contentColor: '#a2adb1'
+        });
+    </script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/1999/xhtml">
+<html>
+<head>
+    <title>湿度采集</title>
+</head>
+<body>
+<!--
+{%for i in Test%}
+设备{{i.mac}}
+<br>
+湿度:{{i.humidity}}
+<br>
+采集时间:{{i.time.month}}月{{i.time.day}}日  {{i.time.time}}
+<br>
+{%endfor%}
+-->
+<script>
+	var data1 = new Array();
+	var temp;
+	humidity = new Object();
+	var et = {{Test|safe}};
+	for(var i in et){
+		for(var j in et[i]){
+			document.write(String(j)+':'+String(et[i][j])+'<br>');
+		}
+	}
+</script>
+</body>
+</html>
