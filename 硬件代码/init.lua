@@ -1,0 +1,6 @@
+print('start')
+--dofile('set_ap_wifi.lua')
+dofile('tcp_set_wifi.lua')
+dofile("setup_i2c.lua")
+dofile("timer.lua")
+--file.remove("init.lua")
